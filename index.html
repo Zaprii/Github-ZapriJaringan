@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Hosting</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            max-width: 400px;
+            width: 85%;
+        }
+
+        h1 {
+            color: #16a34a;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        .status {
+            display: inline-block;
+            background: #dcfce7;
+            color: #15803d;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        footer {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hosting Berhasil!</h1>
+        <div class="status">● Website Online</div>
+
+        <p>
+            Selamat! File <b>index.html</b> berhasil dimuat.
+            Hosting kamu siap diuji.
+        </p>
+
+        <p id="waktu"></p>
+
+        <footer>
+            Simple Hosting Test &copy; 2026
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById("waktu").textContent =
+            "Waktu akses: " + new Date().toLocaleString("id-ID");
+    </script>
+
+</body>
+</html>
